@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checked="true">
+        <shape android:shape="rectangle"> <!-- Zmienione na prostokąt -->
+            <solid android:color="#6854a4"/>
+            <corners android:radius="8dp"/> <!-- Mniejsze zaokrąglenie -->
+        </shape>
+    </item>
+    <item android:state_checked="false">
+        <shape android:shape="rectangle"> <!-- Zmienione na prostokąt -->
+            <solid android:color="#e7dbff"/>
+            <stroke android:width="2dp" android:color="#e7dbff"/>
+            <corners android:radius="8dp"/> <!-- Mniejsze zaokrąglenie -->
+        </shape>
+    </item>
+</selector>
