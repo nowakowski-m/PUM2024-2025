@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation.xml"
+    app:startDestination="@id/welcome">
+
+    <fragment
+        android:id="@+id/welcome"
+        android:name="com.example.lista2.Welcome"
+        android:label="welcome"
+        tools:layout="@layout/welcome">
+        <action
+            android:id="@+id/action_welcome_to_login"
+            app:destination="@id/login" />
+        <action
+            android:id="@+id/action_welcome_to_register"
+            app:destination="@id/register" />
+    </fragment>
+    <fragment
+        android:id="@+id/login"
+        android:name="com.example.lista2.Login"
+        android:label="login"
+        tools:layout="@layout/login" >
+        <action
+            android:id="@+id/action_login_to_welcome"
+            app:destination="@id/login" />
+        <action
+            android:id="@+id/action_login_to_userinterface"
+            app:destination="@id/userinterface" />
+    </fragment>
+    <fragment
+        android:id="@+id/register"
+        android:name="com.example.lista2.Register"
+        android:label="register"
+        tools:layout="@layout/register">
+        <action
+            android:id="@+id/action_register_to_login"
+            app:destination="@id/login" />
+    </fragment>
+    <fragment
+        android:id="@+id/userinterface"
+        android:name="com.example.lista2.Userinterface"
+        android:label="userinterface"
+        tools:layout="@layout/userinterface">
+        <action
+            android:id="@+id/action_userinterface_to_welcome"
+            app:destination="@id/welcome" />
+    </fragment>
+</navigation>

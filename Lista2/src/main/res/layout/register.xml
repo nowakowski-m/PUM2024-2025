@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textViewRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Registration page."
+        android:textAlignment="center"
+        android:textSize="80px"
+        />
+
+    <EditText
+        android:id="@+id/register_username"
+        android:inputType="textNoSuggestions"
+        android:hint="Username"
+        android:layout_gravity="center"
+        android:layout_width="800px"
+        android:layout_height="wrap_content"
+        />
+
+    <EditText
+        android:id="@+id/register_password"
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:layout_gravity="center"
+        android:layout_width="800px"
+        android:layout_height="wrap_content"
+        />
+
+    <EditText
+        android:id="@+id/register_password_repeat"
+        android:inputType="textPassword"
+        android:hint="Repeat password"
+        android:layout_gravity="center"
+        android:layout_width="800px"
+        android:layout_height="wrap_content"
+        />
+
+    <Button
+        android:id="@+id/buttonRegister"
+        android:layout_width="600px"
+        android:layout_height="200px"
+        android:layout_gravity="center"
+        android:text="Register"
+        />
+
+    <TextView
+        android:id="@+id/register_error"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:text=""
+        android:textAlignment="center"
+        android:textSize="40px" />
+
+</LinearLayout>

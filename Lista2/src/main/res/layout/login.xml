@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login"
+    android:orientation="vertical">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/textViewLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login page."
+        android:textAlignment="center"
+        android:textSize="80px"
+        />
+
+    <EditText
+        android:id="@+id/login_username"
+        android:inputType="textNoSuggestions"
+        android:hint="Username"
+        android:layout_gravity="center"
+        android:layout_width="800px"
+        android:layout_height="wrap_content"
+        />
+
+    <EditText
+        android:id="@+id/login_password"
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:layout_gravity="center"
+        android:layout_width="800px"
+        android:layout_height="wrap_content"
+        />
+
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="600px"
+        android:layout_height="200px"
+        android:layout_gravity="center"
+        android:text="Login"
+        />
+
+    <TextView
+        android:id="@+id/login_error"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:text=""
+        android:textAlignment="center"
+        android:textSize="40px" />
+
+</LinearLayout>
