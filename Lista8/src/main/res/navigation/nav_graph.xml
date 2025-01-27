@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/gradesListFragment">
+
+    <fragment
+        android:id="@+id/gradesListFragment"
+        android:name="com.example.lista8.view.GradesListFragment"
+        android:label="Grades List"
+        tools:layout="@layout/fragment_grades_list" >
+        <action
+            android:id="@+id/action_to_editGradeFragment"
+            app:destination="@id/editGradeFragment" />
+        <action
+            android:id="@+id/action_gradesListFragment_to_addGradeFragment"
+            app:destination="@id/addGradeFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/editGradeFragment"
+        android:name="com.example.lista8.view.EditGradeFragment"
+        android:label="Edit Grade"
+        tools:layout="@layout/fragment_edit_grade" />
+
+    <fragment
+        android:id="@+id/addGradeFragment"
+        android:name="com.example.lista8.view.AddGradeFragment"
+        android:label="Add Grade"
+        tools:layout="@layout/fragment_add_grade" />
+</navigation>
